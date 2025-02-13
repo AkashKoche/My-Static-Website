@@ -2,7 +2,7 @@
   "name": "static-website",
   "version": "1.0.0",
   "description": "A simple static website",
-  "main": "index.html",
+  "main": "js/script.js",
   "scripts": {
     "start": "live-server",
     "build": "npx parcel index.html",
