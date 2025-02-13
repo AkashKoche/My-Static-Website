@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "live-server",
-    "build": "parcel build index.html",
+    "build": "npx parcel index.html",
     "lint:js": "eslint .",
     "lint:css": "stylelint \"css/*.css\"",
     "postcss": "postcss css/styles.css -o dist/styles.min.css",
