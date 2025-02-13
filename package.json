@@ -1,0 +1,29 @@
+{
+  "name": "static-website",
+  "version": "1.0.0",
+  "description": "A simple static website",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "build": "parcel build index.html",
+    "lint:js": "eslint .",
+    "lint:css": "stylelint \"css/*.css\"",
+    "postcss": "postcss css/styles.css -o dist/styles.min.css",
+    "deploy": "aws s3 sync ./dist s3://your-s3-bucket-name --delete"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "live-server": "^1.2.1",
+    "parcel": "^2.0.0",
+    "postcss": "^8.0.0",
+    "postcss-cli": "^9.0.0",
+    "autoprefixer": "^10.0.0",
+    "cssnano": "^5.0.0",
+    "stylelint": "^14.0.0",
+    "stylelint-config-standard": "^23.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "lodash": "^4.17.21"
+  }
+}
