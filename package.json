@@ -2,9 +2,9 @@
   "name": "static-website",
   "version": "1.0.0",
   "description": "A simple static website",
-  "main": "js/script.js",
+  "main": "index.html",
   "scripts": {
-    "start": "live-server",
+    "start": "npx live-server",
     "build": "npx parcel index.html",
     "lint:js": "eslint .",
     "lint:css": "stylelint \"css/*.css\"",
