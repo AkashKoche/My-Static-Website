@@ -2,10 +2,10 @@
   "name": "static-website",
   "version": "1.0.0",
   "description": "A simple static website",
-  "main": "js/script.js",
+  "main": "index.html",
   "scripts": {
     "start": "live-server",
-    "build": "parcel build js/script.js",
+    "build": "parcel build index.html",
     "lint:js": "eslint .",
     "lint:css": "stylelint \"css/*.css\"",
     "postcss": "postcss css/styles.css -o dist/styles.min.css",
